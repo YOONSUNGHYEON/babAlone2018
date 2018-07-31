@@ -1,0 +1,29 @@
+
+<html>
+<head>
+</head>
+<body>
+    <a class="menu-toggle rounded" href="#">
+            <i class="fas fa-bars"></i>
+            </a>
+    
+    <nav id="sidebar-wrapper" class="">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+            <a class="js-scroll-trigger" href="#page-top">슬기로운 혼밥생활</a>
+            </li>
+
+            {% if 'user_id' in session %}
+                <li class="sidebar-nav-item"><a  class="js-scroll-trigger" href='{{ url_for("userbp.logout") }}'>로그아웃</a></li>
+                <li class="sidebar-nav-item"><a class="js-scroll-trigger" href='{{ url_for("userbp.mypage") }}'>마이페이지</a></li>
+            {% else %}
+                <li class="sidebar-nav-item"><a class="js-scroll-trigger" href='{{ url_for("userbp.login") }}'>로그인</a></li>
+                <li class="sidebar-nav-item"><a class="js-scroll-trigger" href="/"> 홈 </a></li>
+            {% endif %}
+        </ul>
+    </nav>    
+</body>
+</html>
+
+
+
