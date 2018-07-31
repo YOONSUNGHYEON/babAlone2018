@@ -1,0 +1,105 @@
+<div id ="restaurantDetail_sub">
+        <div id="restdetail" style = "height: auto; overflow : hidden;">
+                <div id="restdetailinfo">
+                        <h1>식당 상세정보 페이지</h1><br>
+                </div>
+
+                <div class="col-md-12 col-md-offset-3" id="wrapper" style="overflow : hidden;"  >
+                        <div class="col-md-12" id="rank" style="overflow : hidden;">
+                                <h3>1위</h3>
+                        </div>
+                        <div class="classcol-md-12" id="imganddetail" style="overflow : hidden;">
+                                <div id="picture">
+                                        <img src="https://d2t7cq5f1ua57i.cloudfront.net/images/r_images/51954/53611/51954_53611_76_0_4404_201652535821181_300x200.jpg" style="margin-left: auto; margin-right: auto; display: block;" align="left" width="400" height="270" align="top"align="top">
+                                        <br>
+                                </div>
+                                <div class="" id="detail" style="overflow : hidden">
+                                        <div class="col-md-10 col-md-offset-3" id="name" >
+                                                <h4> 식당이름 : 떡볶이가 좋아</h4>        
+                                        </div>
+                                        <br>
+                                        <div class="col-md-10 col-md-offset-3" id="direction" >
+                                                <h5>식당위치 : 서울시 종로구 종로4가동 70<h5>
+                                        </div>
+                                        <br>
+                                        <div class="col-md-10 col-md-offset-3" id="num" >
+                                                <h5>전화번호 : 02-123-1234<h5>        
+                                        </div>
+                                </div>        
+                        </div>
+                </div>
+                <br>
+                <div class="col-md-12 " id="wrapper2"  style = "height: auto; overflow : hidden;">
+                        <div class="col-md-12" id="foodtype"  style = "height: auto; overflow : hidden;">
+                                <h4>음식종류</h4> 
+                                <p>
+                                떡볶이, 순대, 튀김류    
+                                </p> 
+                               
+                        </div>
+                        <div class="col-md-12 " id="score"  style = "height: auto; overflow : hidden;">
+                                <div class="scoretitle">
+                                <h4>평점</h4> 
+                                </div>
+                                <table>
+                                <thead>
+                                <tr>
+                                <td>일반파</td>
+                                <td>미식가파</td>
+                                <td>분위기파</td> 
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                <td>71점</td>
+                                <td>71점</td>
+                                <td>71점</td>
+                                </tr>
+                                </tbody>
+                                </table>               
+                        </div>
+                </div>
+        </div>
+        
+        <br>
+        <br>
+        <div id="scoredetail" style = "height: auto;">
+                <div id="review"  style = "height: auto;">        
+                        <h1>리뷰남기기</h1>
+                 
+                <div class="col-md-12" id = "tastescore">
+                                <p>{% include 'sub/restaurantDetailSub_sub1.html' %}</p>
+                        </div>
+
+                <div class="col-md-12 " id = "moodscore">
+                        <p>{% include 'sub/restaurantDetailSub_sub2.html' %}</p>
+                </div>
+
+                <div class="col-md-12" id="otherscore">
+                        <h6>3. 이 식당을 평가해주세요.</h6>
+                        <div class="form-group1" id="restsound">
+                                <label class="radio-inline">
+                                <input type="radio" name="optionsRadiosInline1" id="optionsRadiosInline1" value="option1" checked="">시끌벅적한 식당
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="optionsRadiosInline1" id="optionsRadiosInline2" value="option2">조용한 식당
+                                </label>
+                        </div>
+                        <div class="form-group2" id="restlarge">
+                                <label class="radio-inline2">
+                                <input type="radio" name="optionsRadiosInline2" id="optionsRadiosInline3" value="option1" checked="">식당이 크다
+                                </label>
+                                <label class="radio-inline2">
+                                <input type="radio" name="optionsRadiosInline2" id="optionsRadiosInline4" value="option2">소규모 식당이다
+                                </label>
+                        </div>
+                </div>
+
+                <div id = "reviewbutton">
+                        <center><a class="btn btn-primary btn-xl" href='{{url_for("userbp.restaurantDetail")}}'> 리뷰 등록</a></center>
+                </div>
+                </div>            
+                </div>        
+        </div>
+</div>
+
